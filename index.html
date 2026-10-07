@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Christ Anglican Youth & Young Adults — Marietta, Georgia" />
+    <title>Christ Anglican | Youth & Young Adults</title>
+    <link rel="icon" type="image/png" href="images/ChristCHURCHPICTURE.png" />
+    <link rel="apple-touch-icon" href="images/ChristCHURCHPICTURE.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      // Set before paint so scroll-reveal styles only apply when JS is alive.
+      document.documentElement.classList.add('anim');
+    </script>
+  </head>
+  <body>
+    <header class="site-header" id="home">
+      <a class="brand" href="index.html" aria-label="Christ Anglican Youth home — reload this page">
+        <img class="brand-mark" src="images/ChristCHURCHPICTURE.png" alt="Christ Anglican Church, Marietta GA" />
+        <span>
+          <b>CHRIST ANGLICAN CHURCH</b>
+          <small>YOUTH + YOUNG ADULTS</small>
+        </span>
+      </a>
+      <button class="menu-button" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#leaders">Leadership</a>
+        <a href="#connect">Connect</a>
+        <a class="nav-give" href="#give">Give</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-copy reveal reveal-left">
+          <p class="eyebrow">MARIETTA, GEORGIA</p>
+          <h1>Rooted in Christ.<br />
+            <em>Made for community.</em>
+          </h1>
+          <p class="hero-text">A home for students and young adults to grow in faith, find belonging, and make a difference together.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#connect">Join the family <span>→</span>
+            </a>
+            <a class="text-link" href="#events">See what’s next</a>
+          </div>
+        </div>
+        <div class="hero-art reveal reveal-right" aria-hidden="true">
+          <div class="sun">
+            <img src="images/CHISOMPICTURE.jpg" alt="Rooted in Christ" />
+          </div>
+        </div>
+      </section>
+      <section class="welcome" id="about">
+        <div class="reveal reveal-left">
+          <p class="eyebrow rust">WELCOME IN</p>
+          <h2>You belong<br />here.</h2>
+        </div>
+        <div class="welcome-copy reveal reveal-right">
+          <p>Whether you are exploring faith for the first time or looking for a place to deepen it, you’ll find people ready to walk alongside you.</p>
+          <a class="arrow-link" href="#connect">Meet our community <span>→</span>
+          </a>
+        </div>
+        <img class="welcome-photo reveal reveal-up" src="images/quiet-reading.jpg" alt="A young adult following along with the service booklet" />
+      </section>
+      <section class="events-section" id="events">
+        <div class="section-heading reveal reveal-down">
+          <div>
+            <p class="eyebrow">SAVE THE DATE</p>
+            <h2>Coming up</h2>
+          </div>
+          <a class="arrow-link light-link" href="#connect">Get event updates <span>→</span>
+          </a>
+        </div>
+        <!-- Cards are built by renderEvents() in script.js — edit the EVENTS list there -->
+        <div class="event-grid" id="event-grid">
+        </div>
+        <noscript>
+          <p class="event-fallback">Young Adult Bible Study meets every Wednesday at 7:00 PM in the Fellowship Hall. Youth gather Sunday nights at 6:00 PM in the Parish Hall.</p>
+        </noscript>
+      </section>
+      <section class="photo-band" aria-label="Life at Christ Anglican Youth">
+        <figure class="band-photo reveal reveal-up">
+          <img src="images/worship-singing.jpg" alt="A student leading worship on the microphone" />
+        </figure>
+        <figure class="band-photo reveal reveal-up" style="--delay:90ms">
+          <img src="images/cultural-day.jpg" alt="A student performing in traditional dress on Cultural Day" />
+        </figure>
+        <figure class="band-photo reveal reveal-up" style="--delay:180ms">
+          <img src="images/worship-team.jpg" alt="The worship team leading the congregation in song" />
+        </figure>
+      </section>
+      <section class="verse">
+        <blockquote class="reveal reveal-up">
+          <p>Let no one despise your youth, but be an example to the believers in word, in conduct, in love, in spirit, in faith, in purity.</p>
+          <cite>1 Timothy 4:12</cite>
+        </blockquote>
+      </section>
+      <section class="leaders" id="leaders">
+        <div class="section-heading dark-heading">
+          <div class="reveal reveal-left">
+            <p class="eyebrow rust">THE PEOPLE BEHIND IT</p>
+            <h2>Youth Executive</h2>
+          </div>
+          <p class="section-intro reveal reveal-right">Say hello to the students helping shape our community this year.</p>
+        </div>
+        <div class="leader-grid">
+          <article class="leader-card">
+            <div class="portrait portrait-one">
+              <!-- Put the photo file name (or full URL) in src below -->
+              <img class="portrait-photo" src="images/kester-illoka.jpg" alt="Kester Illoka" />
+              <span>KI</span>
+            </div>
+            <p>PRESIDENT</p>
+            <h3>Kester Illoka</h3>
+          </article>
+          <article class="leader-card">
+            <div class="portrait portrait-two">
+              <!-- Put the photo file name (or full URL) in src below -->
+              <img class="portrait-photo" src="images/lotanna-ekwegbalu.jpg" alt="Lotanna Ekwegbalu" />
+              <span>LE</span>
+            </div>
+            <p>VICE PRESIDENT</p>
+            <h3>Lotanna Ekwegbalu</h3>
+          </article>
+          <article class="leader-card">
+            <div class="portrait portrait-three">
+              <!-- Put the photo file name (or full URL) in src below -->
+              <img class="portrait-photo" src="images/eman.png" alt="Emmanuel Adiri" />
+              <span>EA</span>
+            </div>
+            <p>SECRETARY</p>
+            <h3>Emmanuel Adiri</h3>
+          </article>
+          <article class="leader-card">
+            <div class="portrait portrait-four">
+              <!-- Put the photo file name (or full URL) in src below -->
+              <img class="portrait-photo" src="images/evidence.jpg" alt="Evidence Obiora" />
+              <span>EO</span>
+            </div>
+            <p>TREASURER</p>
+            <h3>Evidence Obiora</h3>
+          </article>
+          <article class="leader-card">
+            <div class="portrait portrait-one">
+              <!-- Put the photo file name (or full URL) in src below -->
+              <img class="portrait-photo" src="images/chimelu.png" alt="Chimelu Ekwegbalu" />
+              <span>CE</span>
+            </div>
+            <p>EVENT COORDINATOR</p>
+            <h3>Chimelu Ekwegbalu</h3>
+          </article>
+          <article class="leader-card">
+            <div class="portrait portrait-two">
+              <!-- Put the photo file name (or full URL) in src below -->
+              <img class="portrait-photo" src="images/oluomachi-okeiyi.jpg" alt="Oluomachi Okeiyi" />
+              <span>OO</span>
+            </div>
+            <p>PUBLIC RELATIONS</p>
+            <h3>Oluomachi Okeiyi</h3>
+          </article>
+        </div>
+      </section>
+      <section class="leaders" id="young-adults-executive" style="background:#e7e3f3">
+        <div class="section-heading dark-heading">
+          <div class="reveal reveal-left">
+            <p class="eyebrow rust">YOUNG ADULTS MINISTRY</p>
+            <h2>Young Adults<br />Executive</h2>
+          </div>
+          <p class="section-intro reveal reveal-right">Meet the team helping create meaningful community for young adults.</p>
+        </div>
+        <div class="leader-grid">
+          <article class="leader-card">
+            <div class="portrait portrait-one">
+              <!-- Put the photo file name (or full URL) in src below -->
+              <img class="portrait-photo" src="images/chinweifeuwa-ifeanacho.webp" alt="Chinweifeuwa Ifeanacho" />
+              <span>CI</span>
+            </div>
+            <p>SECRETARY</p>
+            <h3>Chinweifeuwa Ifeanacho</h3>
+          </article>
+          <article class="leader-card">
+            <div class="portrait portrait-three">
+              <!-- Put the photo file name (or full URL) in src below -->
+              <img class="portrait-photo" src="images/somtochukwu-ukegbu.jpg" alt="Somtochukwu Ukegbu" />
+              <span>SU</span>
+            </div>
+            <p>FINANCIAL SECRETARY</p>
+            <h3>Somtochukwu Ukegbu</h3>
+          </article>
+          <article class="leader-card">
+            <div class="portrait portrait-four">
+              <!-- Put the photo file name (or full URL) in src below -->
+              <img class="portrait-photo" src="images/divine.jpg" alt="Divine Ironna" />
+              <span>DI</span>
+            </div>
+            <p>EVENT COORDINATOR</p>
+            <h3>Divine Ironna</h3>
+          </article>
+          <article class="leader-card">
+            <div class="portrait portrait-two">
+              <!-- Put the photo file name (or full URL) in src below -->
+              <img class="portrait-photo" src="images/faith.jpeg" alt="Faith Obi" />
+              <span>FO</span>
+            </div>
+            <p>SOCIAL MEDIA COORDINATOR</p>
+            <h3>Faith Obi</h3>
+          </article>
+        </div>
+      </section>
+      <section class="connect" id="connect">
+        <div class="connect-intro reveal reveal-left">
+          <p class="eyebrow">FIND YOUR PLACE</p>
+          <h2>Let’s get<br />
+            <em>connected.</em>
+          </h2>
+          <p>Tell us a little about yourself, and we'll make sure you hear about the things that matter to you.</p>
+          <div class="contact-line">Questions? <a href="mailto:cacyouthofunity@gmail.com">cacyouthofunity@gmail.com</a>
+          </div>
+          <img class="connect-photo" src="images/praise-dance.jpg" alt="A young adult singing and dancing during praise" />
+        </div>
+        <form class="signup-form reveal reveal-right" id="signup-form">
+          <label>Full name<input required type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>Email address<input required type="email" name="email" placeholder="you@example.com" />
+          </label>
+          <label>I’m interested in<select name="group">
+              <option>Youth of Unity</option>
+              <option>Young Adults Ministry</option>
+            </select>
+          </label>
+          <button class="button button-dark" type="submit">Become a member <span>→</span>
+          </button>
+          <p class="form-note">We’ll only use your info to keep you in the loop.</p>
+          <p class="form-message" role="status">
+          </p>
+        </form>
+      </section>
+      <section class="give" id="give">
+        <img class="give-photo reveal reveal-down" src="images/ROOTEDPICTURE.jpg" alt="A student celebrating during a praise song" />
+        <div class="reveal reveal-left">
+          <p class="eyebrow">SUPPORT THE MISSION</p>
+          <h2>Make a difference<br />that lasts.</h2>
+        </div>
+        <div class="give-right reveal reveal-right">
+          <p>Your generosity helps create space for young people to encounter Jesus, build meaningful friendships, and serve our city.</p>
+          <a class="button button-rust" href="https://cacmarietta.org/donate/" target="_blank" rel="noopener">Give to the church <span>→</span>
+          </a>
+          <small>Opens the church’s secure giving page in a new tab.</small>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a class="brand footer-brand" href="#home">
+        <img class="brand-mark" src="images/ChristCHURCHPICTURE.png" alt="" />
+        <span>
+          <b>Christ Anglican Church</b>
+          <small>YOUTH + YOUNG ADULTS</small>
+        </span>
+      </a>
+      <p>© <span id="year">
+        </span> Christ Anglican Church · Marietta, GA</p>
+      <div>
+        <a href="https://www.instagram.com/youth_of_unity.cac/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/ChristChurchMarietta/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </footer>
+    <script src="script.js">
+    </script>
+  </body>
+</html>
+
